@@ -1,0 +1,340 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    background-color: black;
+
+}
+#container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        'navbar'
+        'section'
+        'footer';
+}
+head{
+    display: none;
+}
+title{
+    display: none;
+}
+nav{
+    display: navbar;
+    display: grid;
+    grid-auto-flow: row;
+    
+    
+}
+nav li{
+    display: inline-block;
+}
+nav ul li img{
+    width: 2rem;
+    height: 2rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: rgb(39, 37, 37);
+    font-size: 1.3rem;
+    border: 2px solid black;
+}
+/* .hov:hover{
+    border: 2px solid red;
+    background-color: rgb(247, 224, 191);
+    color: red;
+} */
+section{
+    display: section;
+}
+footer{
+    display: footer;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+nav, footer{
+    background-color: rgb(39, 37, 37);
+}
+.error{
+    color: yellow;
+    background-color: red;
+    font-weight: bolder;
+}
+
+.centre_t{
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.data{
+    padding: 0px 2px;
+}
+
+/* .form_grid{
+    display: grid;
+    justify-content: center;
+    grid-gap: 0.5rem;
+}
+.form_grid h1,h3{
+    background-color: rgb(39, 37, 37);
+    width: 50vw;
+} */
+.form_grid input,.submit_button{
+    border: 0.1px solid rgb(192, 65, 65);
+    
+}
+
+
+.button_div{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-gap: 10px;
+}
+.submit_button{
+    display: grid;
+    font-size: 1.3rem;
+    background-color: rgb(39, 37, 37);
+    width: 15vw;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+/* #name,#logout{
+    border: 2px solid #86de86;
+    border-radius: 0px;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    background-color: #0d0148;
+    color: #9bf9ed;
+
+} */
+/* #logout:hover{
+    color: red;
+    background-color: white;
+} */
+
+#home{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: none; */
+    background: url('../img/parking_back.jpg') no-repeat center center/cover;
+}
+
+#heading {
+    font-size: 3.3rem;
+    margin: 20px
+}
+.text{
+    font-size: 1.5rem;
+}
+.park{
+    border: 2px solid red;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+}
+#bottom{
+    display: grid;
+    grid-auto-flow: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.para{
+    width: 467px;
+    margin-bottom: 30px;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.hov:hover{
+    /* border: 2px solid red; */
+    /* background-color: rgb(247, 224, 191); */
+    background-color: rgb(20, 155, 141);
+    /* color: red; */
+}
+
+
+/* .centre_t{
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 1.1em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.centre_t{
+    background-color: #00e6ac;
+    font-weight: bold;
+}
+
+.centre_t  td{
+    padding: 12px 15px;
+} */
+
+/* .data{
+    padding: 2px 5px;
+} */
+
+.form_grid{
+    display: grid;
+    justify-content: center;
+    grid-gap: 0.5rem;
+}
+/* .form_grid h1,h3{
+    background-color: rgb(39, 37, 37);
+    width: 50vw;
+} */
+/* .form_grid input,.submit_button{
+    border: 0.1px solid rgb(192, 65, 65);
+} */
+
+.form_grid input:not(.submit_button){
+    padding: 6px 20px;
+    background-color: #1f1f24;
+    border: none;
+}
+
+
+.button_div{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-gap: 10px;
+}
+.submit_button{
+    display: grid;
+    font-size: 1.3rem;
+    background-color: rgb(39, 37, 37);
+    /* width: 15vw; */
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    padding: 8px 32px;
+}
+#name,#logout{
+    /* border: 2px solid #86de86; */
+    border-radius: 0px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    background-color: rgb(66, 141, 190);
+    /* color: #9bf9ed; */
+
+}
+#logout:hover{
+    /* color: red; */
+    background-color: rgb(11, 124, 113);
+}
+
+.btn-grad {background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%)}
+.btn-grad {
+   /* margin: 10px; */
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   /* box-shadow: 0 0 20px #eee; */
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+table{
+    /* border: 1px solid white; */
+    text-align: center;
+    /* border-radius: 2px; */
+    overflow: hidden;
+    margin: auto;
+    /* border-radius: 20px; */
+
+}
+
+th,td{
+    padding: 15px;
+    border-bottom: 1px solid#ddd;;
+}
+td{
+    font-size: 1em;
+    font-weight:520;
+}
+th{
+    background-color: rgb(20, 155, 141);
+    /* color: black; */
+    font-size: 1.1em;
+}
+
+tr:hover{
+    background-color: rgb(20, 155, 141);
+}
+
+input[name="price"]{
+    padding: 6px 20px;
+    margin: 8px 0;
+}
+
+.price_submit{
+    border: none;
+    padding: 8px 32px;
+    background-color: rgb(20, 155, 141,0.75);
+    transition-duration: 0.5s;
+}
+.price_submit:hover{
+    /* background-color: rgb(237, 100, 196); */
+    background-color: rgb(20, 155, 141);
+}
+
+#parking_locations{
+    margin: 8px 0;
+}
+
+#previous_bills_admin{
+    margin: 8px 0;
+}
+
+.admin_login{
+    margin: 20px 0;
+
+}
+
+.customer_login{
+    margin: 20px 0;
+}
+
+.park_button_link{
+    color:rgb(41, 187, 172) ;
+
+}
+
+.leave_link{
+    color: rgb(41, 187, 172);
+}
+
+
+.click{
+    padding: 5px 20px;
+    text-decoration: none;
+}
